@@ -1,0 +1,32 @@
+<!-- {% extends "header.html" %}
+{% load static %}
+{% block content %}
+<h1>Members</h1>
+
+
+<table border="4">
+{% for x in mymembers %}
+<tr>
+<td>{{ x.id }}</td>
+<td>{{ x.first_name }}</td>
+<td>{{ x.last_name }}</td>
+<td>{{ x.age }}</td>
+<td>{{ x.gender }}</td>
+<td>{{ x.date }}</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %} -->
+
+
+<h1>Members</h1>
+
+<table border="1">
+{% for x in mymembers %}
+<tr>
+<td>{{ x.id }}</td>
+<td>{{ x.firstname }}</td>
+<td>{{ x.lastname }}</td>
+</tr>
+{% endfor %}
+</table>
